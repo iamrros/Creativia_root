@@ -73,7 +73,7 @@
     }
   }
 
-  .accordion-content--open {
+  .accordion-content--open ~ .accordion-content {
     display: block;
     height: auto;
   }

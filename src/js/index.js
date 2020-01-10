@@ -28,16 +28,20 @@ for (let i = 0; i < tabs.length; i++) {
   });
 }
 
-let tabClass = document.getElementsByClassName('q');
+
+
+
+let tabsClass = document.getElementsByClassName('q');
 let contents = document.getElementsByClassName("accordion-content");
 let tabArray = [];
 
-for (let i = 0; i < tabClass.length; i++) {
-  tabArray.push(tabClass[i]);
+for (let i = 0; i < tabsClass.length; i++) {
+  tabArray.push(tabsClass[i]);
 
   tabArray[i].addEventListener('click', function (e) {
     e.preventDefault();
-    contents[i].classList.toggle('accordion-content--open');
+    // contents[i].classList.toggle('accordion-content--open');
+    tabArray[i].classList.toggle('accordion-content--open');
     console.log(contents[i])
     let closeTabs = tabArray.filter(tab => tab !== tabArray[i]);
 
