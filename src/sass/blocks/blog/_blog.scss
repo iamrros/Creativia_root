@@ -1,0 +1,42 @@
+.blog {
+  padding-bottom: 167px;
+  &__intro {
+    text-align: center;
+    margin-top: 95px;
+    margin-bottom: 47px;
+    p {
+      margin-top: 45px;
+      font-weight: 700;
+    }
+  }
+
+  &__posts {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__post {
+    margin-top: 50px;
+    @media (max-width: 575px) {
+      flex-direction: column;
+      text-align: center;
+    }
+    img {
+      @media (max-width: 575px) {
+        width: 185px;
+        height: 100px;
+        margin: 0 auto;
+      }
+    }
+    &__subtitles {
+      @media (max-width: 575px) {
+        margin: 0 auto;
+      }
+    }
+    .post__title {
+      @media (max-width: 575px) {
+        margin-top: 15px;
+      }
+    }
+  }
+}

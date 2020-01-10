@@ -1,0 +1,31 @@
+.list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  @media (max-width: 767px) {
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    @media (max-width: 767px) {
+      max-width: 45%;
+    }
+  }
+
+  &__title {
+    text-transform: uppercase;
+    margin-top: 30px;
+    color: #262626;
+    font-family: Raleway, serif;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+  &__text {
+    margin-top: 26px;
+    color: #505050;
+    font-family: Lato, serif;
+    line-height: 22px;
+  }
+}

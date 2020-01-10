@@ -1,0 +1,59 @@
+@import 'base/variables';
+
+body {
+  margin: 0;
+}
+
+h2 {
+  font-size: $font-size-h2;
+  font-family: Raleway, serif;
+  font-weight: 700;
+  @media (max-width: 767px) {
+    font-size: ($font-size-h2 - 4px)!important;
+  }
+}
+
+h3 {
+  font-size: $font-size-h3;
+  @media (max-width: 767px) {
+    font-size: ($font-size-h3 - 4px)!important;
+  }
+}
+
+span {
+  color: #ff0036;
+}
+
+p {
+  color: #505050;
+  font-family: Lato, serif;
+  font-size: 16px;
+  line-height: 22px;
+  @media (max-width: 1199px) {
+    font-size: 14px;
+  }
+
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+  @media (max-width: 1199px) {
+    width: 80%;
+  }
+}
+
+@import 'blocks/header/header';
+@import 'blocks/nav/nav';
+@import 'blocks/hamburger-nav/hamburger-nav';
+@import 'blocks/about/about';
+@import 'blocks/accordion/accordion';
+@import 'blocks/list/list';
+@import 'blocks/portfolio/portfolio';
+@import 'blocks/features/features';
+@import 'blocks/clients/clients';
+@import 'blocks/teamwork/teamwork.scss';
+@import 'blocks/services/services.scss';
+@import 'blocks/blog/blog.scss';
+@import 'blocks/post/post.scss';
+@import 'blocks/footer/footer.scss';

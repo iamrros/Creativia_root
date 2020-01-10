@@ -1,0 +1,46 @@
+.footer {
+  &__social {
+    box-sizing: border-box;
+    background: url("../img/social_fon.png") top;
+    background-size: cover;
+    min-height: 383px;
+
+    h2 {
+      color: #ffffff;
+      font-family: Raleway, serif;
+      font-size: 30px;
+      font-weight: 700;
+      padding-top: 100px;
+      text-align: center;
+    }
+  }
+
+  &__socialList {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    max-width: 451px;
+    margin: 49px auto 0;
+    @media (max-width: 575px) {
+      padding: 0;
+    }
+  }
+
+  &__logo {
+    box-sizing: border-box;
+    min-height: 79px;
+    background-color: #262626;
+    text-align: center;
+    padding: 30px;
+  }
+
+  &__socialLogo {
+    transition: filter 2s;
+  }
+
+  &__socialLogo_hover {
+    filter: blur(3px);
+  }
+
+
+}

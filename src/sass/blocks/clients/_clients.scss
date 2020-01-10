@@ -1,0 +1,79 @@
+.clients {
+  background: black url("../img/clients__fon.png") center;
+  background-size: cover;
+  min-height: 652px;
+  @media (max-width: 1200px) {
+    padding-bottom: 70px;
+  }
+
+  &__intro {
+    padding-top: 70px;
+    text-align: center;
+    h2 {
+      color: white;
+    }
+    p {
+      margin-top: 50px;
+      color: #a4a4a4;
+      font-weight: 700;
+    }
+  }
+
+  &__block {
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    @media (max-width: 1200px) {
+      flex-direction: column;
+    }
+  }
+
+  &__review {
+    text-align: center;
+    flex-basis: 50%;
+    h3 {
+      color: #ffffff;
+      font-family: Raleway, serif;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+    q {
+      display: inline-block;
+      margin-top: 25px;
+      color: #a4a4a4;
+      font-family: Lato, serif;
+      line-height: 22px;
+    }
+  }
+
+  &__author {
+    margin-top: 47px;
+    text-align: center;
+    p {
+      font-family: Raleway, serif;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+  }
+
+  &__bricks {
+    flex-basis: 50%;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0;
+  }
+
+  &__item {
+    list-style: none;
+    padding-bottom: 30px;
+    img {
+      @media (max-width: 767px) {
+        width: 35vw;
+      }
+    }
+  }
+}

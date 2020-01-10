@@ -1,0 +1,12 @@
+$font-size-h2: 30px;
+$font-size-h3: 20px;
+
+@media (max-width: 767px) {
+  h2 {
+    font-size: ($font-size-h2 - 10px);
+  }
+
+  h3 {
+    font-size: ($font-size-h3 - 10px);
+  }
+}
